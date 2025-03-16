@@ -1,4 +1,4 @@
-🕵️‍♂️ 98Kbot v4.2.1
+🕵️‍♂️ 98Kbot v4
 A Utility Bot Designed To Run Ur Alt or Main For Afk In Ur Farm Or Just Use It Like A Template
 
 ⚠️ Intended for educational and experimental use only.
