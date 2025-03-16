@@ -13,11 +13,17 @@ This project is strictly for educational purposes to By downloading, you accept 
 
 ⚙️ Features
 Basic Movement
+
 Head Movement 
+
 Chats Commands
+
 Tpa Commands (Remember To Disable Confirmation Request)
+
 Basic Interaction (Drop Attack Eat)
+
 3 Afk Button (U Need To Put Coordinates) 
+
 And AI Follow player
 
 
