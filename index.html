@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft Bot Controller</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Minecraft -->
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <!-- Includi NippleJS per il joystick -->
+  <script src="https://cdn.jsdelivr.net/npm/nipplejs@0.8.6/dist/nipplejs.min.js"></script>
+</head>
+<body>
+  <!-- Sfondo animato -->
+  <div class="particles"></div>
+
+  <div class="container">
+    <!-- Stato connessione -->
+    <div id="connectionStatus" class="status disconnected">
+      <span class="status-dot"></span>
+      <span class="status-text">Disconnected</span>
+    </div>
+
+    <h1>Minecraft Bot Controller</h1>
+
+    <!-- Movimento -->
+    <div class="card">
+      <h2>Movimento</h2>
+      <div class="buttons movement-buttons">
+        <button id="forward" class="btn-minecraft">Forward</button>
+        <button id="backward" class="btn-minecraft">Backward</button>
+        <button id="left" class="btn-minecraft">Left</button>
+        <button id="right" class="btn-minecraft">Right</button>
+        <button id="jump" class="btn-minecraft">Jump</button>
+        <button id="drop" class="btn-minecraft">Drop</button>
+      </div>
+    </div>
+
+    <!-- Comandi -->
+    <div class="card">
+      <h2>Comandi</h2>
+      <div class="input-group">
+        <input type="text" id="chatCommand" placeholder="Write A Command" class="minecraft-input">
+        <button id="sendCommand" class="btn-minecraft">Invia</button>
+      </div>
+    </div>
+
+    <!-- TPA -->
+    <div class="card">
+      <h2>TPA</h2>
+      <div class="input-group">
+        <input type="text" id="tpaTarget" placeholder="Target Username" class="minecraft-input">
+        <button id="tpaButton" class="btn-minecraft">Send TPA</button>
+      </div>
+    </div>
+
+    <!-- AFK -->
+    <div class="card">
+      <h2>AFK</h2>
+      <div class="buttons">
+        <button id="afk1" class="btn-minecraft">AFK 1</button>
+        <button id="afk2" class="btn-minecraft">AFK 2</button>
+        <button id="afk3" class="btn-minecraft">AFK 3</button>
+      </div>
+    </div>
+
+    <!-- AI -->
+    <div class="card">
+      <h2>AI</h2>
+      <button id="follow" class="btn-minecraft btn-full">Follow Nearest Player</button>
+    </div>
+
+    <!-- Azioni -->
+    <div class="card">
+      <h2>Azioni</h2>
+      <div class="buttons">
+        <button id="eat" class="btn-minecraft">Eat</button>
+        <button id="attack" class="btn-minecraft">Attack</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Joystick -->
+  <div id="joystickZone" class="joystick-container"></div>
+
+  <!-- Renderer script -->
+  <script src="renderer.js" defer></script>
+</body>
+</html>
